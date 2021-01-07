@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:background="#8FCEFF">
+
+
+        <ImageView
+            android:layout_width="233dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chosun_logo2" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/list_view" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

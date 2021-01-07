@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="출석 현황"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2020년 몇월"
+        android:textSize="20sp"
+        android:id="@+id/gv_calendar_activity_tv_title"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+    <GridView
+        android:id="@+id/gv_calendar_activity_gv_calendar"
+        android:layout_width="375dp"
+        android:layout_height="474dp"
+        android:layout_marginTop="30dp"
+        android:columnWidth="13dp"
+        android:listSelector="@drawable/grideview_selector"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gv_calendar_activity_b_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="지난 달"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/gv_calendar_activity_b_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="다음 달"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
